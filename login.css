@@ -30,6 +30,9 @@ body {
   flex-grow: 1;
   margin: 100px;
 }
+.left a{
+  cursor: pointer;
+}
 
 h1 {
   font-size: 48px;
