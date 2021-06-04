@@ -690,7 +690,7 @@ footer .p1 {
   .nav-div img {
     display: block;
   }
-
+ 
   .get-started-flex {
     flex-direction: column;
   }
@@ -834,9 +834,9 @@ footer .p1 {
 /* FOR MOBILE PHONES */
 @media screen and (max-width: 480px) {
   .get-started ul {
-    display: block;
+    /* display: block;
     z-index: 100;
-    position: relative;
+    position: relative; */
   }
   .get-started li:hover {
     font-weight: bold;
