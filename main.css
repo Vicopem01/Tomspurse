@@ -91,7 +91,7 @@ a:active {
   color: inherit;
 }
 .get-started h1 {
-  /* padding: 149px 0 0 73px; */
+  padding: 149px 0 0 73px;
   font-weight: 500;
   font-size: 36px;
 }
