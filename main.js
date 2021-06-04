@@ -7,12 +7,12 @@ let show = false;
 function popUp() {
     console.log(true)
   if (show) {
-    remove.style.display = "block"
+    // remove.style.display = "block"
     ulTop.style.display = "none";
     show= false
   } else {
     ulTop.style.display = "block";
-    remove.style.display = "none"
+    // remove.style.display = "none"
     show = true
   }
 }

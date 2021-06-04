@@ -91,7 +91,7 @@ a:active {
   color: inherit;
 }
 .get-started h1 {
-  padding: 149px 0 0 73px;
+  /* padding: 149px 0 0 73px; */
   font-weight: 500;
   font-size: 36px;
 }
@@ -126,8 +126,10 @@ a:active {
   color: #022b69;
   width: 50%;
   text-align: left;
-  margin-left: auto;
+  /* margin-left: auto; */
   display: none;
+  position: absolute;
+  right: 0
 }
 .get-started li {
   padding-bottom: 60px;
@@ -713,7 +715,7 @@ footer .p1 {
     z-index: 100;
     position: relative; */
     z-index: 100;
-    position: relative;
+    /* position: relative; */
 }
   .get-started h1 {
     padding: 30px 0 0 0;
@@ -932,3 +934,7 @@ footer .p1 {
     margin: auto;
   }
 }
+
+
+
+
