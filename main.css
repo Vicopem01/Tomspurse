@@ -855,6 +855,9 @@ footer .p1 {
     z-index: 100;
     position: relative; */
   }
+  .nav-div{
+    margin-right: 15px;
+  }
   .get-started li:hover {
     font-weight: bold;
   }
