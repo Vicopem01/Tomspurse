@@ -1,11 +1,11 @@
 /* font styling using a random downloaded font */
 @font-face {
   font-family: "gotham_proregular";
-  src: url("./fonts/GothamPro.ttf");
+  src: url("../fonts/GothamPro.ttf");
 }
 @font-face {
   font-family: "gotham_probold";
-  src: url("./fonts/gotham_probold.ttf");
+  src: url("../fonts/gotham_probold.ttf");
 }
 
 * {
