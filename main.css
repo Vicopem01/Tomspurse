@@ -845,6 +845,10 @@ footer .p1 {
 /* MEDIA QUERRIES */
 /* FOR MOBILE PHONES */
 @media screen and (max-width: 480px) {
+  body{
+    overflow-x: hidden;
+
+  }
   .nav-div {
     margin-right: 15px;
   }
