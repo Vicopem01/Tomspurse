@@ -1,11 +1,11 @@
 /* font styling using a random downloaded font */
 @font-face {
   font-family: "gotham_proregular";
-  src: url("../fonts/GothamPro.ttf");
+  src: url("./fonts/GothamPro.ttf");
 }
 @font-face {
   font-family: "gotham_probold";
-  src: url("../fonts/gotham_probold.ttf");
+  src: url("./fonts/gotham_probold.ttf");
 }
 
 * {
@@ -51,12 +51,11 @@ h2 {
   flex-grow: 1;
 }
 .box {
-  margin: 100px;
-  width: 553px;
-  height: 562px;
+  margin: 20px;
+  /* width: 691px;
+  height: 87%; */
   background: #ffffff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06),
-    0px 0px 1px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
   border-radius: 20px 20px 20px 0px;
 }
 form {
@@ -64,32 +63,66 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+  }
 h3 {
   font-size: 30px;
   line-height: 29px;
-  padding: 44px 104px 22px 104px;
+  padding: 40px 104px 20px 104px;
   color: #022b69;
   font-family: "gotham_probold";
 }
-input {
-    width: 94.04%;
-    padding: 18.5px;
-    background: #F4F8FC;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    font-size: 25px;
-    font-family: gotham_proregular;
+#email, #password1, #password2{
+  background: #F4F8FC;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: gotham_proregular;
+  margin-bottom: 14px;
+  color: #022b69;
+  padding: 20px 15px;
+  margin-top: 10px;
+}
+.full-name{
+margin-bottom: 20px
+}
+.full-name span{
+  display: inline-block;
+  width: 58%;
+}
+#first-name{
+  width: 40%;
+  background: #F4F8FC;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: gotham_proregular;
+  color: #022b69;
+  padding: 20px 15px;
+}
+#last-name{
+  width: 69%;
+  background: #F4F8FC;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: gotham_proregular;
+  color: #022b69;
+  padding: 20px 15px;
+  margin-left: auto;
+  display: block;
+}
+/* styling the placeholders for the first two input */
+#first-name::placeholder, #last-name::placeholder{
+  font-family: gotham_proregular;
+  font-size: 18px;
+  color: #b2bed0;
 }
 
-ul {
-  list-style-type: none;
-  padding-top: 16px;
-}
-li {
-  float: left;
-}
+/* for the anchor links */
 a{
   color: #0066F5;
   outline: none;
@@ -107,9 +140,6 @@ a:active{
 label {
   color: #b2bed0;
 }
-.label1{
-    padding-bottom: 60px;
-}
 button{
     width: 228px;
     height: 67px;
@@ -118,16 +148,16 @@ button{
     font-family: "gotham_probold";
     color: #FFFFFF;
     font-size: 24px;
-    margin: 50px auto;
+    margin: 30px auto;
     border: none;
     outline: none;
 }
 
 /* Media Querries */
-/* for ipads */
+/* for PADS */
 @media screen and (max-width: 1110px) {
   .right{
-    margin: 100px auto 100px 20px;
+    margin: 30px auto 100px 20px;
   }
   .left{
     margin: 100px 0 100px 40px;
@@ -148,14 +178,9 @@ button{
     font-size: 3vw;
     padding: 20px 50px 20px 50px;
   }
-  .label1{
+  /* .label1{
     padding-bottom: 70px;
-  }
-  ul{
-    padding-top: 10px;
-    font-size: 2vw;
-    display: flex;
-  }
+  } */
   button{
     margin: 60px auto;
   }.new-user{
@@ -167,8 +192,31 @@ button{
   form{
     margin: 20px 30px 0px 30px;
   }
+  #last-name{
+    width: 100%;
+    /* display: inline-block; */
+    margin-left: 0%;
+    margin-top: 20px;
+  }
+  #first-name{
+    width: 100%;
+    margin-top: 10px;
+  }
+  .full-name{
+    display: flex;
+    flex-direction: column;
+  }
+  .full-name span{
+    /* display: none; */
+    width: 100%;
+  }
   
+  #email, #password1, #password2{
+    padding: 10px 15px;
+  }
 }
+
+/* FOR MOBILE PHONES */
 @media screen and (max-width: 560px) {
   .overall{
     display: block;
@@ -186,27 +234,25 @@ button{
   h1{
     text-align: center;
     margin: auto;
-    font-size: 36px;
+    font-size: 26px;
   }
   
   h2{
     text-align: center;
     margin: auto;
-    font-size: 30px;
+    font-size: 20px;
   }
   h3{
     font-family: "gotham_proregular";
-    font-size: 18.3363px;
+    font-size: 16px;
     padding: 20px 40px 0px 40px;
   }
   .box{
     margin: auto;
     width: 90%;
-    height: 360px;
   }
   input{
     width: 100%;
-    font-size: 12px;
   }
   .label1{
     padding-bottom: 35px;
@@ -216,11 +262,6 @@ button{
     padding-bottom: 15px;
     font-size: 11.0018px;
   }
-  ul{
-    padding-top: 0px;
-    font-size: 11.0018px;
-    display: flex;
-  }
 .new-user {
   margin-left: 40px;
 }
@@ -228,6 +269,24 @@ button{
   width: 139.36px;
   height: 40.95px;
   font-size: 14.6691px;
-  margin: 170px auto;
 }
+.full-name{
+  display: flex;
+  flex-direction: column;
+}
+.full-name span{
+  /* display: none; */
+  width: 100%;
+}
+#first-name{
+  width: 100%;
+  margin-top: 10px;
+}
+#last-name{
+  width: 100%;
+  /* display: inline-block; */
+  margin-left: 0%;
+  margin-top: 20px;
+}
+
 }
