@@ -237,7 +237,7 @@ a:active {
   color: #ffffff;
 }
 .section3-p1 {
-  font-family: var(--inter-font);
+  font-family: var(--gotham-light);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -845,10 +845,13 @@ footer .p1 {
 /* MEDIA QUERRIES */
 /* FOR MOBILE PHONES */
 @media screen and (max-width: 480px) {
-  body{
+  /* header {
+    width: 93%;
+  } */
+  main{
     overflow-x: hidden;
-
   }
+  
   .nav-div {
     margin-right: 15px;
   }
